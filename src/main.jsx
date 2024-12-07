@@ -1,15 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router";
-import HomePage from "./pages/HomePage.jsx";
+import { AuthProvider } from "./context/AuthContext";
+import Routes from "./routes/Routes";
+import { ToastContainer } from "react-toastify";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-      </Routes>
-    </BrowserRouter>
+    <AuthProvider>
+      <ToastContainer position="top-center" autoClose={3000} />
+      <Routes />
+    </AuthProvider>
   </StrictMode>
 );
