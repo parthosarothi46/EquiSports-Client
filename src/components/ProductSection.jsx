@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import ProductCard from "./ProductCard";
 import LoadingSpinner from "./LoadingSpinner";
@@ -27,11 +27,9 @@ const ProductSection = () => {
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="p-8">
-      <h2 className="text-2xl font-semibold text-center mb-8">
-        Featured Products
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+    <div className="container mx-auto my-20">
+      <h2 className="text-4xl font-bold mb-10">Featured Products</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {products.map((product) => (
           <ProductCard key={product._id} product={product} />
         ))}

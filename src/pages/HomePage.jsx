@@ -1,13 +1,17 @@
 import Banner from "../components/Banner";
+import Features from "../components/Features";
+import Newsletter from "../components/Newsletter";
+import Product from "../components/Product";
 import ProductSection from "../components/ProductSection";
-import SportsCategories from "../components/SportsCategories";
 
 const HomePage = () => {
   return (
     <div>
       <Banner />
       <ProductSection />
-      <SportsCategories />
+      <Product />
+      <Features />
+      <Newsletter />
     </div>
   );
 };
