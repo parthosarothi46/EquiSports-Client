@@ -69,9 +69,9 @@ const AllEquipmentPage = () => {
           <h2 className="text-2xl font-bold">All Equipment</h2>
           <button
             onClick={handleSort}
-            className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+            className="bg-black text-white px-4 py-2 rounded hover:bg-black"
           >
-            Sort by Price ({sortOrder === "asc" ? "Ascending" : "Descending"})
+            Sort by Price
           </button>
         </div>
         {sortedList.length > 0 ? (
@@ -99,7 +99,7 @@ const AllEquipmentPage = () => {
                   <td className="border border-gray-300 px-4 py-2">
                     <button
                       onClick={() => handleViewDetails(equipment._id)}
-                      className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                      className="bg-black text-white px-4 py-2 rounded hover:bg-black"
                     >
                       View Details
                     </button>
