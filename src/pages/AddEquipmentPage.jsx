@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -211,7 +211,7 @@ const AddEquipmentPage = () => {
 
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 disabled:bg-gray-400"
+            className="w-full bg-black text-white py-2 rounded-lg hover:bg-black disabled:bg-gray-400"
             disabled={loading}
           >
             {loading ? "Adding..." : "Add Equipment"}
