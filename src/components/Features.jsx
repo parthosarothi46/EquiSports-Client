@@ -68,7 +68,7 @@ const Features = () => {
 
           {/* Performance Feature */}
           <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-            <div className="p-8">
+            <div className="p-8 text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#007bff"

@@ -87,7 +87,7 @@
 
 import React, { useState } from "react";
 import { useAuth } from "../context/AuthContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -123,7 +123,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="font-[sans-serif] bg-gray-900 md:h-screen">
+    <div className="bg-gray-900 m-5">
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
         {/* Left Section */}
         <div className="max-md:order-1 p-4">
@@ -141,12 +141,11 @@ const LoginPage = () => {
               <h3 className="text-gray-800 text-4xl font-extrabold">Sign in</h3>
               <p className="text-gray-800 text-sm mt-4">
                 Don't have an account?{" "}
-                <a
-                  href="/register"
-                  className="text-blue-600 font-semibold hover:underline ml-1 whitespace-nowrap"
-                >
-                  Register here
-                </a>
+                <Link to="/register">
+                  <a className="text-black font-semibold hover:underline ml-1 whitespace-nowrap">
+                    Register here
+                  </a>
+                </Link>
               </p>
             </div>
 
@@ -191,7 +190,7 @@ const LoginPage = () => {
                   id="remember-me"
                   name="remember-me"
                   type="checkbox"
-                  className="h-4 w-4 shrink-0 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+                  className="h-4 w-4 shrink-0 text-black focus:ring-black border-gray-300 rounded"
                 />
                 <label
                   htmlFor="remember-me"
@@ -203,7 +202,7 @@ const LoginPage = () => {
               <div>
                 <a
                   href="/forgot-password"
-                  className="text-blue-600 font-semibold text-sm hover:underline"
+                  className="text-black font-semibold text-sm hover:underline"
                 >
                   Forgot Password?
                 </a>
