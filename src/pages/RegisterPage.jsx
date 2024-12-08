@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../context/AuthContext"; // Auth context for Firebase actions
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
