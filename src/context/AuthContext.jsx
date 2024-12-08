@@ -8,6 +8,7 @@ import {
   createUserWithEmailAndPassword,
 } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AuthContext = createContext();
 
@@ -46,7 +47,7 @@ export const AuthProvider = ({ children }) => {
     <AuthContext.Provider
       value={{ user, login, signInWithGoogle, logout, register }}
     >
-      {!loading && children}
+      {loading ? <LoadingSpinner /> : children}
     </AuthContext.Provider>
   );
 };

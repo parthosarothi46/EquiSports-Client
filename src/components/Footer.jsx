@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo Section */}
           <div className="lg:flex lg:items-center">
             <Link to="/">
-              <p className="text-2xl text-black dark:text-white font-bold">
+              <p className="text-3xl text-black dark:text-white font-bold">
                 EquiSports
               </p>
             </Link>

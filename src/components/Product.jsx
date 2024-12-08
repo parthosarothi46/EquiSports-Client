@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import ProductCard from "./ProductCard"; // Assuming ProductCard is in the same directory
+import ProductCard from "./ProductCard";
 import { Fade } from "react-awesome-reveal";
+import LoadingSpinner from "./LoadingSpinner";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -33,7 +34,7 @@ const Product = () => {
         <h2 className="text-4xl font-bold mb-10">Our Products</h2>
 
         {loading ? (
-          <p>Loading products...</p>
+          <LoadingSpinner />
         ) : (
           <>
             <Fade direction="left">

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const AllEquipmentPage = () => {
   const [equipmentList, setEquipmentList] = useState([]);
   const [sortedList, setSortedList] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const [sortOrder, setSortOrder] = useState("asc"); // Track sorting order
+  const [sortOrder, setSortOrder] = useState("asc");
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -15,9 +16,8 @@ const AllEquipmentPage = () => {
       try {
         const response = await axios.get("http://localhost:5001/equipment");
         setEquipmentList(response.data);
-        setSortedList(response.data); // Initialize sortedList with fetched data
+        setSortedList(response.data);
       } catch (error) {
-        console.error("Error fetching equipment:", error);
         setError("Failed to load equipment. Please try again later.");
       } finally {
         setLoading(false);
@@ -37,9 +37,9 @@ const AllEquipmentPage = () => {
 
     const sorted = [...equipmentList].sort((a, b) => {
       if (newSortOrder === "asc") {
-        return a.price - b.price; // Ascending order
+        return a.price - b.price;
       } else {
-        return b.price - a.price; // Descending order
+        return b.price - a.price;
       }
     });
 
@@ -47,19 +47,7 @@ const AllEquipmentPage = () => {
   };
 
   if (loading) {
-    return (
-      <div className="min-h-screen flex justify-center items-center bg-gray-100 dark:bg-gray-800">
-        <div className="loader border-t-4 border-blue-500 rounded-full w-16 h-16 animate-spin"></div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex justify-center items-center bg-gray-100 dark:bg-gray-800">
-        <p className="text-red-500 text-lg">{error}</p>
-      </div>
-    );
+    return <LoadingSpinner />;
   }
 
   return (

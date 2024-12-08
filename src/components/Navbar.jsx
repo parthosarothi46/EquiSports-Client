@@ -1,6 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import { useState, useEffect } from "react";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
   const { user, logout } = useAuth();
@@ -33,7 +34,7 @@ const Navbar = () => {
         <div className="flex flex-wrap items-center justify-between gap-5 w-full">
           {/* Logo */}
           <Link to="/">
-            <p className="text-2xl font-bold text-black dark:text-white">
+            <p className="text-3xl font-bold text-black dark:text-white">
               EquiSports
             </p>
           </Link>
@@ -136,9 +137,13 @@ const Navbar = () => {
               <li className="block lg:hidden">
                 <button
                   onClick={toggleTheme}
-                  className="flex items-center justify-center w-full text-black dark:text-white"
+                  className="flex items-center justify-center rounded-full border border-gray-500 p-2 text-black dark:text-white"
                 >
-                  {theme === "light" ? "🌞" : "🌜"}
+                  {theme === "light" ? (
+                    <MdOutlineDarkMode />
+                  ) : (
+                    <MdOutlineLightMode />
+                  )}
                 </button>
               </li>
             </ul>
@@ -156,16 +161,20 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="/register"
-                  className="px-4 py-2 text-sm rounded font-semibold text-white border-2 border-black bg-black transition-all ease-in-out duration-300 hover:bg-transparent hover:text-black"
+                  className="px-4 py-2 text-sm rounded font-semibold text-white border-2 border-black bg-black transition-all ease-in-out duration-300 hover:bg-transparent hover:text-black hover:bg-white"
                 >
                   Sign up
                 </Link>
                 {/* Theme Toggle for Desktop */}
                 <button
                   onClick={toggleTheme}
-                  className="hidden lg:block px-4 py-2 rounded text-black dark:text-white hover:text-gray-500"
+                  className="hidden lg:block p-2 rounded-full border border-gray-500 text-black dark:text-white"
                 >
-                  {theme === "light" ? "🌞" : "🌜"}
+                  {theme === "light" ? (
+                    <MdOutlineDarkMode />
+                  ) : (
+                    <MdOutlineLightMode />
+                  )}
                 </button>
               </>
             ) : (
@@ -190,9 +199,13 @@ const Navbar = () => {
                   {/* Theme Toggle for Desktop */}
                   <button
                     onClick={toggleTheme}
-                    className="hidden lg:block px-4 py-2 rounded text-black dark:text-white hover:text-gray-500"
+                    className="hidden lg:block p-2 rounded-full border border-gray-500 text-black dark:text-white"
                   >
-                    {theme === "light" ? "🌞" : "🌜"}
+                    {theme === "light" ? (
+                      <MdOutlineDarkMode />
+                    ) : (
+                      <MdOutlineLightMode />
+                    )}
                   </button>
                 </div>
               </>
