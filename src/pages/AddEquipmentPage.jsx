@@ -29,11 +29,14 @@ const AddEquipmentPage = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:5001/add-equipment", {
-        ...formData,
-        userEmail: user.email,
-        userName: user.displayName,
-      });
+      const response = await axios.post(
+        "https://b10-a10-server-side-parthosarothi46.vercel.app/add-equipment",
+        {
+          ...formData,
+          userEmail: user.email,
+          userName: user.displayName,
+        }
+      );
       toast.success("Equipment added successfully!");
       navigate("/my-equipment");
     } catch (error) {

@@ -15,7 +15,9 @@ const AllEquipmentPage = () => {
   useEffect(() => {
     const fetchEquipment = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/equipment");
+        const response = await axios.get(
+          "https://b10-a10-server-side-parthosarothi46.vercel.app/equipment"
+        );
         setEquipmentList(response.data);
         setSortedList(response.data);
       } catch (error) {

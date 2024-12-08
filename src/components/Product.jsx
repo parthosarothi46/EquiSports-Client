@@ -13,7 +13,9 @@ const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5001/equipment"); // Update this URL with your MongoDB API endpoint
+        const response = await axios.get(
+          "https://b10-a10-server-side-parthosarothi46.vercel.app/equipment"
+        ); // Update this URL with your MongoDB API endpoint
         setProducts(response.data);
         setLoading(false);
       } catch (error) {

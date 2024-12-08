@@ -15,7 +15,7 @@ const ViewDetailsPage = () => {
     const fetchEquipmentDetails = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5001/equipment/${id}`
+          `https://b10-a10-server-side-parthosarothi46.vercel.app/equipment/${id}`
         );
         setEquipment(response.data);
       } finally {

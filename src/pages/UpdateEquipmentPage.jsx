@@ -25,7 +25,7 @@ const UpdateEquipmentPage = () => {
     const fetchEquipmentData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5001/equipment/${id}`
+          `https://b10-a10-server-side-parthosarothi46.vercel.app/equipment/${id}`
         );
         if (response.data) {
           setEquipmentData(response.data);
@@ -56,7 +56,7 @@ const UpdateEquipmentPage = () => {
       };
 
       await axios.put(
-        `http://localhost:5001/update-equipment/${id}`,
+        `https://b10-a10-server-side-parthosarothi46.vercel.app/update-equipment/${id}`,
         updatedData
       );
       toast.success("Equipment updated successfully");

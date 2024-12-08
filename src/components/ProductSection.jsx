@@ -12,7 +12,7 @@ const ProductSection = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5001/products?limit=6"
+          "https://b10-a10-server-side-parthosarothi46.vercel.app/products?limit=6"
         );
         setProducts(response.data);
         setLoading(false);

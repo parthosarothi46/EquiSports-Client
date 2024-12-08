@@ -18,7 +18,7 @@ const MyEquipmentPage = () => {
       const fetchUserEquipment = async () => {
         try {
           const response = await axios.get(
-            `http://localhost:5001/user-equipment?email=${user.email}`
+            `https://b10-a10-server-side-parthosarothi46.vercel.app/user-equipment?email=${user.email}`
           );
           setEquipmentList(response.data);
         } catch (error) {
@@ -41,7 +41,7 @@ const MyEquipmentPage = () => {
   const confirmDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:5001/delete-equipment/${selectedEquipment._id}`
+        `https://b10-a10-server-side-parthosarothi46.vercel.app/delete-equipment/${selectedEquipment._id}`
       );
       setEquipmentList(
         equipmentList.filter((item) => item._id !== selectedEquipment._id)
