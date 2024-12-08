@@ -1,8 +1,26 @@
-# React + Vite
+# EquiSports Online Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Site URL:** [EquiSports Online Store](https://equisports-b8d0f.web.app/)
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Dynamic Product Management**:
+
+   - Add, update, and delete sports equipment through an intuitive admin interface.
+
+2. **Responsive Design**:
+
+   - Fully optimized for mobile, tablet, and desktop users, ensuring a seamless shopping experience.
+
+3. **User Authentication**:
+
+   - Secure login and registration using Firebase, including email-password and Google authentication.
+
+4. **Customer-Centric Features**:
+
+   - Browse, search, and filter products by category, price, or ratings.
+   - Add items to the cart or wishlist with real-time updates.
+
+5. **Order Processing & Reviews**:
+   - Easy-to-use checkout system for purchasing products.
+   - Leave detailed reviews and rate products after purchase.
