@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { updateProfile } from "firebase/auth";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const RegisterPage = () => {
   const [name, setName] = useState("");
@@ -43,6 +44,9 @@ const RegisterPage = () => {
 
   return (
     <div className="bg-white dark:bg-gray-900 py-0 md:py-5">
+      <Helmet>
+        <title>EquiSports | Register</title>
+      </Helmet>
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
         <div className="max-md:order-1 p-3 md:p-4 bg-gray-50 dark:bg-gray-800 h-full">
           <img

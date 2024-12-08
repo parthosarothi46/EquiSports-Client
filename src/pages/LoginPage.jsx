@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAuth } from "../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -36,6 +37,9 @@ const LoginPage = () => {
 
   return (
     <div className="bg-gray-900 py-0 md:py-5 dark:bg-gray-900">
+      <Helmet>
+        <title>EquiSports | Login</title>
+      </Helmet>
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
         {/* Left Section */}
         <div className="max-md:order-1 p-3 md:p-4">

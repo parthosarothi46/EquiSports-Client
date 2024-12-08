@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const UpdateEquipmentPage = () => {
   const { id } = useParams();
@@ -67,6 +68,9 @@ const UpdateEquipmentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center px-3 lg:px-4 xl:px-0 py-5">
+      <Helmet>
+        <title>EquiSports | Update Equipment</title>
+      </Helmet>
       <div className="max-w-4xl w-full bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl space-y-6">
         <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-white">
           Update Equipment

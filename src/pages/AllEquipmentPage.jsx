@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import LoadingSpinner from "../components/LoadingSpinner";
+import { Helmet } from "react-helmet";
 
 const AllEquipmentPage = () => {
   const [equipmentList, setEquipmentList] = useState([]);
@@ -52,6 +53,9 @@ const AllEquipmentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col items-center py-6 px-3 lg:px-4 xl:px-0">
+      <Helmet>
+        <title>EquiSports | All Equipment</title>
+      </Helmet>
       <div className="max-w-6xl w-full bg-white dark:bg-gray-700 p-2 md:p-6 rounded-lg shadow-md">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white">

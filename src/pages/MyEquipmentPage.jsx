@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import DeleteConfirmationModal from "../components/DeleteConfirmationModal";
 import toast from "react-hot-toast";
+import { Helmet } from "react-helmet";
 
 const MyEquipmentPage = () => {
   const { user } = useAuth();
@@ -54,6 +55,9 @@ const MyEquipmentPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-800 px-3 lg:px-4 xl:px-0 py-5">
+      <Helmet>
+        <title>EquiSports | My Equipment</title>
+      </Helmet>
       <div className="max-w-6xl w-full p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
           My Equipment List
