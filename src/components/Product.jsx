@@ -17,7 +17,6 @@ const Product = () => {
         setProducts(response.data);
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching products:", error);
         setLoading(false);
       }
     };
@@ -29,7 +28,7 @@ const Product = () => {
   const productsToDisplay = displayAll ? products : products.slice(0, 8);
 
   return (
-    <div className="dark:bg-gray-900 dark:text-white py-20">
+    <div className="dark:bg-gray-900 dark:text-white px-3 lg:px-4 xl:px-0">
       <div className="container mx-auto">
         <h2 className="text-4xl font-bold mb-10">Our Products</h2>
 
@@ -38,7 +37,7 @@ const Product = () => {
         ) : (
           <>
             <Fade direction="left">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {productsToDisplay.map((product) => (
                   <ProductCard key={product._id} product={product} />
                 ))}
@@ -48,7 +47,7 @@ const Product = () => {
             {!displayAll && products.length > 8 && (
               <button
                 onClick={() => setDisplayAll(true)}
-                className="mt-4 px-6 py-2 bg-black text-white rounded hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
+                className="mt-10 px-6 py-2 bg-black text-white rounded hover:bg-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
               >
                 Show All
               </button>

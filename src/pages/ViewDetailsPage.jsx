@@ -32,7 +32,7 @@ const ViewDetailsPage = () => {
   }
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-white dark:bg-gray-800">
+    <div className="min-h-screen flex justify-center items-center bg-white dark:bg-gray-800 px-3 lg:px-4 xl:px-0 pb-5 md:pb-0">
       <div className="max-w-3xl w-full bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
         <div className="flex flex-col md:flex-row items-center gap-6">
           <img

@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 pt-12 pb-6 px-10 tracking-wide">
+    <footer className="bg-white dark:bg-gray-900 pt-12 pb-6 tracking-wide px-3 lg:px-4 xl:px-0">
       <div className="max-w-screen-xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo Section */}

@@ -27,7 +27,7 @@ const ProductSection = () => {
   if (loading) return <LoadingSpinner />;
 
   return (
-    <div className="py-20 dark:bg-gray-900 dark:text-white">
+    <div className="py-20 dark:bg-gray-900 dark:text-white px-3 lg:px-4 xl:px-0">
       <div className="container mx-auto ">
         <h2 className="text-4xl font-bold mb-10">Featured Products</h2>
         <Fade direction="right">

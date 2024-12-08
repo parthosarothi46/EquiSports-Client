@@ -29,8 +29,8 @@ const Navbar = () => {
   };
 
   return (
-    <header className=" bg-white dark:bg-gray-800">
-      <div className="container mx-auto flex py-4 px-4 sm:px-10 tracking-wide relative z-50">
+    <header className=" bg-white dark:bg-gray-800 px-3 lg:px-4 xl:px-0">
+      <div className="container mx-auto flex py-4 tracking-wide relative z-50">
         <div className="flex flex-wrap items-center justify-between gap-5 w-full">
           {/* Logo */}
           <Link to="/">

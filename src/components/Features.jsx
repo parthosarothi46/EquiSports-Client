@@ -1,8 +1,8 @@
 const Features = () => {
   return (
-    <div className="dark:bg-gray-900 dark:text-gray-100 transition-colors">
+    <div className="dark:bg-gray-900 dark:text-gray-100 transition-colors px-3 lg:px-4 xl:px-0">
       <div className="container mx-auto py-20">
-        <h2 className="text-gray-800 dark:text-gray-100 text-4xl font-extrabold text-center mb-16">
+        <h2 className="text-gray-800 dark:text-gray-100 text-4xl md:text-5xl font-extrabold text-center mb-16">
           Discover Our Exclusive Features
         </h2>
 
@@ -89,7 +89,6 @@ const Features = () => {
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

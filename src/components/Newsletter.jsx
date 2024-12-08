@@ -16,7 +16,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="bg-gradient-to-t from-purple-200 via-purple-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 py-20 px-4">
+    <div className="bg-gradient-to-t from-purple-200 via-purple-50 to-purple-50 dark:from-gray-800 dark:via-gray-900 dark:to-gray-900 py-20 px-3 lg:px-4 xl:px-0">
       <div className="max-w-4xl w-full mx-auto text-center">
         <h2 className="text-gray-800 dark:text-gray-100 text-4xl md:text-5xl font-extrabold mb-6 leading-[45px]">
           Subscribe Our Newsletter

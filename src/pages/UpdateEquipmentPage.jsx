@@ -66,7 +66,7 @@ const UpdateEquipmentPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center py-8">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center px-3 lg:px-4 xl:px-0 py-5">
       <div className="max-w-4xl w-full bg-white dark:bg-gray-800 p-8 rounded-xl shadow-2xl space-y-6">
         <h2 className="text-3xl font-semibold text-center text-gray-800 dark:text-white">
           Update Equipment

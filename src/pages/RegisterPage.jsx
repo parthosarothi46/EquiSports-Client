@@ -42,16 +42,16 @@ const RegisterPage = () => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-900 py-5">
+    <div className="bg-white dark:bg-gray-900 py-0 md:py-5">
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
-        <div className="max-md:order-1 p-4 bg-gray-50 dark:bg-gray-800 h-full">
+        <div className="max-md:order-1 p-3 md:p-4 bg-gray-50 dark:bg-gray-800 h-full">
           <img
             src="https://readymadeui.com/signin-image.webp"
             className="lg:max-w-[90%] w-full h-full object-contain block mx-auto"
             alt="login-image"
           />
         </div>
-        <div className="flex items-center p-6 h-full w-full">
+        <div className="flex items-center p-3 md:p-6 h-full w-full">
           <form className="max-w-lg w-full mx-auto" onSubmit={handleRegister}>
             <div className="mb-12">
               <h3 className="text-black dark:text-white md:text-3xl text-2xl font-extrabold max-md:text-center">

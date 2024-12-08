@@ -53,7 +53,7 @@ const MyEquipmentPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-800">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-800 px-3 lg:px-4 xl:px-0 py-5">
       <div className="max-w-6xl w-full p-6 bg-white dark:bg-gray-900 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-center text-gray-900 dark:text-white mb-6">
           My Equipment List

@@ -35,10 +35,10 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="bg-gray-900 py-5 dark:bg-gray-900">
+    <div className="bg-gray-900 py-0 md:py-5 dark:bg-gray-900">
       <div className="grid md:grid-cols-2 items-center gap-8 h-full">
         {/* Left Section */}
-        <div className="max-md:order-1 p-4">
+        <div className="max-md:order-1 p-3 md:p-4">
           <img
             src="https://readymadeui.com/signin-image.webp"
             className="lg:max-w-[80%] w-full h-full object-contain block mx-auto"
@@ -47,7 +47,7 @@ const LoginPage = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex items-center md:p-8 p-6 bg-white dark:bg-gray-800 md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
+        <div className="flex items-center md:p-8 p-3 bg-white dark:bg-gray-800 md:rounded-tl-[55px] md:rounded-bl-[55px] h-full">
           <form className="max-w-lg w-full mx-auto" onSubmit={handleLogin}>
             <div className="mb-12">
               <h3 className="text-gray-800 dark:text-white text-4xl font-extrabold">

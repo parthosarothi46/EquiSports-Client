@@ -43,7 +43,7 @@ const AddEquipmentPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 transition-colors duration-300 px-3 lg:px-4 xl:px-0 py-5">
       <div className="max-w-3xl w-full bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold text-center mb-6 text-gray-800 dark:text-white">
           Add New Equipment
